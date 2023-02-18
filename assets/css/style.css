@@ -438,6 +438,7 @@ h6 {
     height: 100vh;
     background-size: cover;
     position: center center;
+    user-select: none;
   }
 }
 
@@ -800,7 +801,7 @@ section {
   padding-bottom: 10px;
 }
 
-/* Product Featuress Section
+/* Product Features Section
 --------------------------------*/
 
 @media (width < 500px) {
@@ -878,11 +879,14 @@ section {
 @media (width < 500px) {
   #features-footer {
     background: linear-gradient(rgba(255, 217, 0, 0), rgba(255, 237, 101, 0)), url("../img/info6-mobile.png");
-    background-size: cover;                  
-    background-repeat: no-repeat;  
-    padding: 60px 0 0 0;
-    overflow: hidden;
-  }  
+    /* background-size: contain; */
+    background-position: center;
+  }
+
+  #features .wrapper-info {
+    width: auto;
+    height: 130px;
+  }
 }
 
 @media (width > 500px) {
@@ -892,7 +896,7 @@ section {
     background-repeat: no-repeat;  
     padding: 60px 0 0 0;
     overflow: hidden;
-  }  
+  }
 }
 
 #features-footer .wrapper-info {
@@ -900,7 +904,7 @@ section {
   height: 600px;
 }
 
-/* Product Advanced Featuress Section
+/* Product Advanced Features Section
 --------------------------------*/
 #advanced-features {
   overflow: hidden;
