@@ -878,6 +878,7 @@ section {
 
 @media (width < 500px) {
   #features-footer {
+    display: none;
     background: linear-gradient(rgba(255, 217, 0, 0), rgba(255, 237, 101, 0)), url("../img/info6-mobile.png");
     /* background-size: contain; */
     background-position: center;
