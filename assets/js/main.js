@@ -183,4 +183,12 @@
       btn.blur();
     });
   });
+
+  document.querySelectorAll('.btn-get-started').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      if (e.ctrlKey || e.metaKey) {
+        setTimeout(() => this.blur(), 10);
+      }
+    });
+  });
 })()
